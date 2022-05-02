@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  $(".js-accordion").accordion({
-    collapsible: true,
-    active: false,
-    icons: false,
-    heightStyle: "section-questions__content",
-  });
-});
-
 (function () {
   function menuBurger() {
     const burger = document.querySelector(".header__burger-btn");
@@ -525,6 +516,15 @@ document.addEventListener("DOMContentLoaded", function () {
           questionsItemStatus = "close";
         }
       }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".js-accordion").accordion({
+        collapsible: true,
+        active: false,
+        icons: false,
+        heightStyle: "section-questions__content",
+      });
     });
   }
 
